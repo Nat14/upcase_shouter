@@ -10,6 +10,9 @@ gem 'sqlite3'
 gem 'monban'
 gem 'monban-generators'
 
+# for using div_for
+gem 'record_tag_helper', '~> 1.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
