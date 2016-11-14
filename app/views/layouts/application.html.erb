@@ -19,6 +19,12 @@
       <% end %>
     </div>
 
+    <% if alert %>
+      <p>
+        <%= alert %>
+      </p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
