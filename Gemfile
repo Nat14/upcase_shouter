@@ -13,6 +13,9 @@ gem 'monban-generators'
 # for using div_for
 gem 'record_tag_helper', '~> 1.0'
 
+# image upload
+gem 'paperclip', '3.4.0'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
