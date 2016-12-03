@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :photo_shouts, only: [:create]
   resource :dashboard, only: [:show]
   resource :session, only: [:new, :create, :destroy]
-  resources :users, only: [:new, :create, :show] do
+  resources :users, only: [:index, :new, :create, :show] do
     post 'follow' => 'following_relationships#create'
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
