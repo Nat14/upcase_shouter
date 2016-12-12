@@ -1,6 +1,11 @@
 class HashtagsController < ApplicationController
   def show
-    @hashtags = params[:id]
-    @shouts = Shout.search("##{@hashtags}")
+    @search = Search.new(term: hashtag)
+  end
+
+  private
+
+  def hashtag
+    params[:id]
   end
 end
